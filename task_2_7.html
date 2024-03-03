@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="task_2_7.css">
+</head>
+<body>
+    <main class="wrapper">
+        <header class="header">
+            <div class="container">
+                <a href="#top" class="header__title">Where in the world ?</a>
+                <button class="header__mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <div class="header__mode-text">Dark Mode</div>
+                </button>
+            </div>
+        </header>
+        <div class="content">
+            <div class="container" id="top">
+                <div class="content__action">
+                    <input type="text" class="search" placeholder="Search for a country...">
+                    <button id="search-button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd"></path>
+                    </svg></button>
+                    <button class="all-countries hide" onclick="allCountries()">All Countries</button>
+                    <div class="filter-wrapper">
+                        <button class="filter"><span>Filter by Region</span> <span><svg id="arrow-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z">
+                            </path>
+                        </svg></span></button>
+                        <ul class="filter-list hide">
+                            <li class="filter-item selected">All</li>
+                            <li class="filter-item">Europe</li>
+                            <li class="filter-item">Asia</li>
+                            <li class="filter-item">Americas</li>
+                            <li class="filter-item">Africa</li>
+                            <li class="filter-item">Oceania</li>
+                            <li class="filter-item">Antarctic</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content__countries">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/78571f7f59.js" crossorigin="anonymous"></script>
+    <script src="task_2_7.js"></script>
+</body>
+</html>
